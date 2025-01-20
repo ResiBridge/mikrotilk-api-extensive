@@ -1,0 +1,16 @@
+{
+    "name": "swagger-ui-github-pages",
+    "version": "1.0.0",
+    "description": "Host Swagger UI on GitHub Pages",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    },
+    "dependencies": {
+      "swagger-ui-dist": "^5.11.0"
+    },
+    "devDependencies": {
+      "vite": "^5.0.12"
+    }
+  }

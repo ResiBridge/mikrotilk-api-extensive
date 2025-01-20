@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Swagger UI</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.0/swagger-ui.min.css">
+    </head>
+    <body>
+      <div id="swagger-ui"></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.0/swagger-ui-bundle.js"></script>
+      <script>
+        window.onload = () => {
+          SwaggerUIBundle({
+            url: "https://raw.githubusercontent.com/ResiBridge/mikrotilk-api-extensive/main/7.13.5.yaml",
+            dom_id: '#swagger-ui',
+          });
+        };
+      </script>
+    </body>
+    </html>
