@@ -1,0 +1,125 @@
+{
+  "endpoint": "/snmp-get",
+  "data": {
+    "post": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "address": {
+              "type": "any",
+              "required": false
+            },
+            "as-value": {
+              "type": "any",
+              "required": false
+            },
+            "authentication-password": {
+              "type": "any",
+              "required": false
+            },
+            "authentication-protocol": {
+              "type": "any",
+              "required": false
+            },
+            "community": {
+              "type": "any",
+              "required": false
+            },
+            "encryption-password": {
+              "type": "any",
+              "required": false
+            },
+            "encryption-protocol": {
+              "type": "any",
+              "required": false
+            },
+            "next": {
+              "type": "any",
+              "required": false
+            },
+            "oid": {
+              "type": "any",
+              "required": false
+            },
+            "port": {
+              "type": "any",
+              "required": false
+            },
+            "security": {
+              "type": "any",
+              "required": false
+            },
+            "tries": {
+              "type": "any",
+              "required": false
+            },
+            "try-timeout": {
+              "type": "any",
+              "required": false
+            },
+            "version": {
+              "type": "any",
+              "required": false
+            },
+            "without-paging": {
+              "type": "any",
+              "required": false
+            },
+            ".proplist": {
+              "type": "any",
+              "required": false
+            },
+            ".query": {
+              "type": "array",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "/snmp-get",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to /snmp-get"
+  },
+  "validation": {}
+}

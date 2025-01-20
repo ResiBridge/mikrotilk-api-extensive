@@ -1,0 +1,125 @@
+{
+  "endpoint": "/torch",
+  "data": {
+    "post": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "as-value": {
+              "type": "any",
+              "required": false
+            },
+            "cpu": {
+              "type": "any",
+              "required": false
+            },
+            "dscp": {
+              "type": "any",
+              "required": false
+            },
+            "dst-address": {
+              "type": "any",
+              "required": false
+            },
+            "dst-address6": {
+              "type": "any",
+              "required": false
+            },
+            "duration": {
+              "type": "any",
+              "required": false
+            },
+            "freeze-frame-interval": {
+              "type": "any",
+              "required": false
+            },
+            "interface": {
+              "type": "any",
+              "required": false
+            },
+            "ip-protocol": {
+              "type": "any",
+              "required": false
+            },
+            "mac-protocol": {
+              "type": "any",
+              "required": false
+            },
+            "port": {
+              "type": "any",
+              "required": false
+            },
+            "src-address": {
+              "type": "any",
+              "required": false
+            },
+            "src-address6": {
+              "type": "any",
+              "required": false
+            },
+            "vlan-id": {
+              "type": "any",
+              "required": false
+            },
+            "without-paging": {
+              "type": "any",
+              "required": false
+            },
+            ".proplist": {
+              "type": "any",
+              "required": false
+            },
+            ".query": {
+              "type": "array",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "/torch",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to /torch"
+  },
+  "validation": {}
+}

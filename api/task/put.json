@@ -1,0 +1,95 @@
+{
+  "endpoint": "put",
+  "data": {
+    "body": {
+      "application/json": {
+        "type": "object",
+        "properties": {
+          "append": {
+            "type": "any",
+            "required": false
+          },
+          "copy-from": {
+            "type": "any",
+            "required": false
+          },
+          "file-name": {
+            "type": "any",
+            "required": false
+          },
+          "max-lines": {
+            "type": "any",
+            "required": false
+          },
+          "max-size": {
+            "type": "any",
+            "required": false
+          },
+          "no-header-paging": {
+            "type": "any",
+            "required": false
+          },
+          "save-interval": {
+            "type": "any",
+            "required": false
+          },
+          "save-timestamp": {
+            "type": "any",
+            "required": false
+          },
+          "source": {
+            "type": "any",
+            "required": false
+          },
+          "switch-to": {
+            "type": "any",
+            "required": false
+          }
+        }
+      }
+    },
+    "responses": {
+      "200": {
+        "description": "Success",
+        "body": {
+          "application/json": {
+            "type": "any"
+          }
+        }
+      },
+      "400": {
+        "description": "Bad command or error",
+        "body": {
+          "application/json": {
+            "type": "object"
+          }
+        }
+      },
+      "401": {
+        "description": "Unauthorized",
+        "body": {
+          "application/json": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "put",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to put"
+  },
+  "validation": {}
+}

@@ -1,0 +1,67 @@
+{
+  "endpoint": "put",
+  "data": {
+    "body": {
+      "application/json": {
+        "type": "object",
+        "properties": {
+          "contents": {
+            "type": "any",
+            "required": false
+          },
+          "copy-from": {
+            "type": "any",
+            "required": false
+          },
+          "name": {
+            "type": "any",
+            "required": false
+          }
+        }
+      }
+    },
+    "responses": {
+      "200": {
+        "description": "Success",
+        "body": {
+          "application/json": {
+            "type": "any"
+          }
+        }
+      },
+      "400": {
+        "description": "Bad command or error",
+        "body": {
+          "application/json": {
+            "type": "object"
+          }
+        }
+      },
+      "401": {
+        "description": "Unauthorized",
+        "body": {
+          "application/json": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "put",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to put"
+  },
+  "validation": {}
+}

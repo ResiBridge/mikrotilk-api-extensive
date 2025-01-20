@@ -1,0 +1,81 @@
+{
+  "endpoint": "/export-certificate",
+  "data": {
+    "post": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "export-passphrase": {
+              "type": "any",
+              "required": false
+            },
+            "file-name": {
+              "type": "any",
+              "required": false
+            },
+            "numbers": {
+              "type": "any",
+              "required": false
+            },
+            "type": {
+              "type": "any",
+              "required": false
+            },
+            ".proplist": {
+              "type": "any",
+              "required": false
+            },
+            ".query": {
+              "type": "array",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "/export-certificate",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to /export-certificate"
+  },
+  "validation": {}
+}

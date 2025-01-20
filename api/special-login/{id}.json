@@ -1,0 +1,149 @@
+{
+  "endpoint": "/{id}",
+  "data": {
+    "get": {
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "uriParameters": {
+      "id": {
+        "type": "string"
+      }
+    },
+    "delete": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "numbers": {
+              "type": "any",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "patch": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "channel": {
+              "type": "any",
+              "required": false
+            },
+            "disabled": {
+              "type": "any",
+              "required": false
+            },
+            "numbers": {
+              "type": "any",
+              "required": false
+            },
+            "port": {
+              "type": "any",
+              "required": false
+            },
+            "user": {
+              "type": "any",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "/{id}",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to /{id}"
+  },
+  "validation": {}
+}

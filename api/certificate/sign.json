@@ -1,0 +1,117 @@
+{
+  "endpoint": "/sign",
+  "data": {
+    "post": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "append": {
+              "type": "any",
+              "required": false
+            },
+            "as-value": {
+              "type": "any",
+              "required": false
+            },
+            "ca": {
+              "type": "any",
+              "required": false
+            },
+            "ca-crl-host": {
+              "type": "any",
+              "required": false
+            },
+            "ca-on-smart-card": {
+              "type": "any",
+              "required": false
+            },
+            "do": {
+              "type": "any",
+              "required": false
+            },
+            "duration": {
+              "type": "any",
+              "required": false
+            },
+            "file": {
+              "type": "any",
+              "required": false
+            },
+            "interval": {
+              "type": "any",
+              "required": false
+            },
+            "name": {
+              "type": "any",
+              "required": false
+            },
+            "number": {
+              "type": "any",
+              "required": false
+            },
+            "once": {
+              "type": "any",
+              "required": false
+            },
+            "without-paging": {
+              "type": "any",
+              "required": false
+            },
+            ".proplist": {
+              "type": "any",
+              "required": false
+            },
+            ".query": {
+              "type": "array",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "/sign",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to /sign"
+  },
+  "validation": {}
+}

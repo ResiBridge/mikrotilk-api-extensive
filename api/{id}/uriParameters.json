@@ -1,0 +1,25 @@
+{
+  "endpoint": "uriParameters",
+  "data": {
+    "id": {
+      "type": "string"
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "uriParameters",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to uriParameters"
+  },
+  "validation": {}
+}

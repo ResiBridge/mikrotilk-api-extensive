@@ -1,0 +1,2687 @@
+{
+  "endpoint": "/nd",
+  "data": {
+    "get": {
+      "queryParameters": {
+        "number": {
+          "type": "any",
+          "required": false
+        },
+        "value-name": {
+          "type": "any",
+          "required": false
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "array"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/add": {
+      "post": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "advertise-dns": {
+                "type": "any",
+                "required": false
+              },
+              "advertise-mac-address": {
+                "type": "any",
+                "required": false
+              },
+              "comment": {
+                "type": "any",
+                "required": false
+              },
+              "copy-from": {
+                "type": "any",
+                "required": false
+              },
+              "disabled": {
+                "type": "any",
+                "required": false
+              },
+              "dns": {
+                "type": "any",
+                "required": false
+              },
+              "hop-limit": {
+                "type": "any",
+                "required": false
+              },
+              "interface": {
+                "type": "any",
+                "required": false
+              },
+              "managed-address-configuration": {
+                "type": "any",
+                "required": false
+              },
+              "mtu": {
+                "type": "any",
+                "required": false
+              },
+              "other-configuration": {
+                "type": "any",
+                "required": false
+              },
+              "pref64": {
+                "type": "any",
+                "required": false
+              },
+              "ra-delay": {
+                "type": "any",
+                "required": false
+              },
+              "ra-interval": {
+                "type": "any",
+                "required": false
+              },
+              "ra-lifetime": {
+                "type": "any",
+                "required": false
+              },
+              "ra-preference": {
+                "type": "any",
+                "required": false
+              },
+              "reachable-time": {
+                "type": "any",
+                "required": false
+              },
+              "retransmit-interval": {
+                "type": "any",
+                "required": false
+              },
+              ".proplist": {
+                "type": "any",
+                "required": false
+              },
+              ".query": {
+                "type": "array",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "put": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "advertise-dns": {
+              "type": "any",
+              "required": false
+            },
+            "advertise-mac-address": {
+              "type": "any",
+              "required": false
+            },
+            "comment": {
+              "type": "any",
+              "required": false
+            },
+            "copy-from": {
+              "type": "any",
+              "required": false
+            },
+            "disabled": {
+              "type": "any",
+              "required": false
+            },
+            "dns": {
+              "type": "any",
+              "required": false
+            },
+            "hop-limit": {
+              "type": "any",
+              "required": false
+            },
+            "interface": {
+              "type": "any",
+              "required": false
+            },
+            "managed-address-configuration": {
+              "type": "any",
+              "required": false
+            },
+            "mtu": {
+              "type": "any",
+              "required": false
+            },
+            "other-configuration": {
+              "type": "any",
+              "required": false
+            },
+            "pref64": {
+              "type": "any",
+              "required": false
+            },
+            "ra-delay": {
+              "type": "any",
+              "required": false
+            },
+            "ra-interval": {
+              "type": "any",
+              "required": false
+            },
+            "ra-lifetime": {
+              "type": "any",
+              "required": false
+            },
+            "ra-preference": {
+              "type": "any",
+              "required": false
+            },
+            "reachable-time": {
+              "type": "any",
+              "required": false
+            },
+            "retransmit-interval": {
+              "type": "any",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/comment": {
+      "post": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "comment": {
+                "type": "any",
+                "required": false
+              },
+              "numbers": {
+                "type": "any",
+                "required": false
+              },
+              ".proplist": {
+                "type": "any",
+                "required": false
+              },
+              ".query": {
+                "type": "array",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/disable": {
+      "post": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "numbers": {
+                "type": "any",
+                "required": false
+              },
+              ".proplist": {
+                "type": "any",
+                "required": false
+              },
+              ".query": {
+                "type": "array",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/edit": {
+      "post": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "any",
+                "required": false
+              },
+              "value-name": {
+                "type": "any",
+                "required": false
+              },
+              ".proplist": {
+                "type": "any",
+                "required": false
+              },
+              ".query": {
+                "type": "array",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/enable": {
+      "post": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "numbers": {
+                "type": "any",
+                "required": false
+              },
+              ".proplist": {
+                "type": "any",
+                "required": false
+              },
+              ".query": {
+                "type": "array",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/export": {
+      "post": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "compact": {
+                "type": "any",
+                "required": false
+              },
+              "file": {
+                "type": "any",
+                "required": false
+              },
+              "hide-sensitive": {
+                "type": "any",
+                "required": false
+              },
+              "show-sensitive": {
+                "type": "any",
+                "required": false
+              },
+              "terse": {
+                "type": "any",
+                "required": false
+              },
+              "verbose": {
+                "type": "any",
+                "required": false
+              },
+              ".proplist": {
+                "type": "any",
+                "required": false
+              },
+              ".query": {
+                "type": "array",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/find": {
+      "post": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "where": {
+                "type": "any",
+                "required": false
+              },
+              ".proplist": {
+                "type": "any",
+                "required": false
+              },
+              ".query": {
+                "type": "array",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/get": {
+      "post": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "any",
+                "required": false
+              },
+              "value-name": {
+                "type": "any",
+                "required": false
+              },
+              ".proplist": {
+                "type": "any",
+                "required": false
+              },
+              ".query": {
+                "type": "array",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{id}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      },
+      "uriParameters": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "delete": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "numbers": {
+                "type": "any",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "advertise-dns": {
+                "type": "any",
+                "required": false
+              },
+              "advertise-mac-address": {
+                "type": "any",
+                "required": false
+              },
+              "comment": {
+                "type": "any",
+                "required": false
+              },
+              "disabled": {
+                "type": "any",
+                "required": false
+              },
+              "dns": {
+                "type": "any",
+                "required": false
+              },
+              "hop-limit": {
+                "type": "any",
+                "required": false
+              },
+              "interface": {
+                "type": "any",
+                "required": false
+              },
+              "managed-address-configuration": {
+                "type": "any",
+                "required": false
+              },
+              "mtu": {
+                "type": "any",
+                "required": false
+              },
+              "numbers": {
+                "type": "any",
+                "required": false
+              },
+              "other-configuration": {
+                "type": "any",
+                "required": false
+              },
+              "pref64": {
+                "type": "any",
+                "required": false
+              },
+              "ra-delay": {
+                "type": "any",
+                "required": false
+              },
+              "ra-interval": {
+                "type": "any",
+                "required": false
+              },
+              "ra-lifetime": {
+                "type": "any",
+                "required": false
+              },
+              "ra-preference": {
+                "type": "any",
+                "required": false
+              },
+              "reachable-time": {
+                "type": "any",
+                "required": false
+              },
+              "retransmit-interval": {
+                "type": "any",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/prefix": {
+      "get": {
+        "queryParameters": {
+          "number": {
+            "type": "any",
+            "required": false
+          },
+          "value-name": {
+            "type": "any",
+            "required": false
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "array"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      },
+      "/add": {
+        "post": {
+          "body": {
+            "application/json": {
+              "type": "object",
+              "properties": {
+                "6to4-interface": {
+                  "type": "any",
+                  "required": false
+                },
+                "autonomous": {
+                  "type": "any",
+                  "required": false
+                },
+                "comment": {
+                  "type": "any",
+                  "required": false
+                },
+                "copy-from": {
+                  "type": "any",
+                  "required": false
+                },
+                "disabled": {
+                  "type": "any",
+                  "required": false
+                },
+                "interface": {
+                  "type": "any",
+                  "required": false
+                },
+                "on-link": {
+                  "type": "any",
+                  "required": false
+                },
+                "preferred-lifetime": {
+                  "type": "any",
+                  "required": false
+                },
+                "prefix": {
+                  "type": "any",
+                  "required": false
+                },
+                "valid-lifetime": {
+                  "type": "any",
+                  "required": false
+                },
+                ".proplist": {
+                  "type": "any",
+                  "required": false
+                },
+                ".query": {
+                  "type": "array",
+                  "required": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "6to4-interface": {
+                "type": "any",
+                "required": false
+              },
+              "autonomous": {
+                "type": "any",
+                "required": false
+              },
+              "comment": {
+                "type": "any",
+                "required": false
+              },
+              "copy-from": {
+                "type": "any",
+                "required": false
+              },
+              "disabled": {
+                "type": "any",
+                "required": false
+              },
+              "interface": {
+                "type": "any",
+                "required": false
+              },
+              "on-link": {
+                "type": "any",
+                "required": false
+              },
+              "preferred-lifetime": {
+                "type": "any",
+                "required": false
+              },
+              "prefix": {
+                "type": "any",
+                "required": false
+              },
+              "valid-lifetime": {
+                "type": "any",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      },
+      "/comment": {
+        "post": {
+          "body": {
+            "application/json": {
+              "type": "object",
+              "properties": {
+                "comment": {
+                  "type": "any",
+                  "required": false
+                },
+                "numbers": {
+                  "type": "any",
+                  "required": false
+                },
+                ".proplist": {
+                  "type": "any",
+                  "required": false
+                },
+                ".query": {
+                  "type": "array",
+                  "required": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/default": {
+        "get": {
+          "queryParameters": {
+            "value-name": {
+              "type": "any",
+              "required": false
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "array"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "/edit": {
+          "post": {
+            "body": {
+              "application/json": {
+                "type": "object",
+                "properties": {
+                  "value-name": {
+                    "type": "any",
+                    "required": false
+                  },
+                  ".proplist": {
+                    "type": "any",
+                    "required": false
+                  },
+                  ".query": {
+                    "type": "array",
+                    "required": false
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "Success",
+                "body": {
+                  "application/json": {
+                    "type": "any"
+                  }
+                }
+              },
+              "400": {
+                "description": "Bad command or error",
+                "body": {
+                  "application/json": {
+                    "type": "object"
+                  }
+                }
+              },
+              "401": {
+                "description": "Unauthorized",
+                "body": {
+                  "application/json": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/export": {
+          "post": {
+            "body": {
+              "application/json": {
+                "type": "object",
+                "properties": {
+                  "compact": {
+                    "type": "any",
+                    "required": false
+                  },
+                  "file": {
+                    "type": "any",
+                    "required": false
+                  },
+                  "hide-sensitive": {
+                    "type": "any",
+                    "required": false
+                  },
+                  "show-sensitive": {
+                    "type": "any",
+                    "required": false
+                  },
+                  "terse": {
+                    "type": "any",
+                    "required": false
+                  },
+                  "verbose": {
+                    "type": "any",
+                    "required": false
+                  },
+                  ".proplist": {
+                    "type": "any",
+                    "required": false
+                  },
+                  ".query": {
+                    "type": "array",
+                    "required": false
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "Success",
+                "body": {
+                  "application/json": {
+                    "type": "any"
+                  }
+                }
+              },
+              "400": {
+                "description": "Bad command or error",
+                "body": {
+                  "application/json": {
+                    "type": "object"
+                  }
+                }
+              },
+              "401": {
+                "description": "Unauthorized",
+                "body": {
+                  "application/json": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/get": {
+          "post": {
+            "body": {
+              "application/json": {
+                "type": "object",
+                "properties": {
+                  "value-name": {
+                    "type": "any",
+                    "required": false
+                  },
+                  ".proplist": {
+                    "type": "any",
+                    "required": false
+                  },
+                  ".query": {
+                    "type": "array",
+                    "required": false
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "Success",
+                "body": {
+                  "application/json": {
+                    "type": "any"
+                  }
+                }
+              },
+              "400": {
+                "description": "Bad command or error",
+                "body": {
+                  "application/json": {
+                    "type": "object"
+                  }
+                }
+              },
+              "401": {
+                "description": "Unauthorized",
+                "body": {
+                  "application/json": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/{id}": {
+          "get": {
+            "responses": {
+              "200": {
+                "description": "Success",
+                "body": {
+                  "application/json": {
+                    "type": "any"
+                  }
+                }
+              },
+              "400": {
+                "description": "Bad command or error",
+                "body": {
+                  "application/json": {
+                    "type": "object"
+                  }
+                }
+              },
+              "401": {
+                "description": "Unauthorized",
+                "body": {
+                  "application/json": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          },
+          "uriParameters": {
+            "id": {
+              "type": "string"
+            }
+          },
+          "patch": {
+            "body": {
+              "application/json": {
+                "type": "object",
+                "properties": {
+                  "autonomous": {
+                    "type": "any",
+                    "required": false
+                  },
+                  "preferred-lifetime": {
+                    "type": "any",
+                    "required": false
+                  },
+                  "valid-lifetime": {
+                    "type": "any",
+                    "required": false
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "Success",
+                "body": {
+                  "application/json": {
+                    "type": "any"
+                  }
+                }
+              },
+              "400": {
+                "description": "Bad command or error",
+                "body": {
+                  "application/json": {
+                    "type": "object"
+                  }
+                }
+              },
+              "401": {
+                "description": "Unauthorized",
+                "body": {
+                  "application/json": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/print": {
+          "post": {
+            "body": {
+              "application/json": {
+                "type": "object",
+                "properties": {
+                  "as-value": {
+                    "type": "any",
+                    "required": false
+                  },
+                  "file": {
+                    "type": "any",
+                    "required": false
+                  },
+                  "interval": {
+                    "type": "any",
+                    "required": false
+                  },
+                  "without-paging": {
+                    "type": "any",
+                    "required": false
+                  },
+                  ".proplist": {
+                    "type": "any",
+                    "required": false
+                  },
+                  ".query": {
+                    "type": "array",
+                    "required": false
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "Success",
+                "body": {
+                  "application/json": {
+                    "type": "any"
+                  }
+                }
+              },
+              "400": {
+                "description": "Bad command or error",
+                "body": {
+                  "application/json": {
+                    "type": "object"
+                  }
+                }
+              },
+              "401": {
+                "description": "Unauthorized",
+                "body": {
+                  "application/json": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/set": {
+          "post": {
+            "body": {
+              "application/json": {
+                "type": "object",
+                "properties": {
+                  "autonomous": {
+                    "type": "any",
+                    "required": false
+                  },
+                  "preferred-lifetime": {
+                    "type": "any",
+                    "required": false
+                  },
+                  "valid-lifetime": {
+                    "type": "any",
+                    "required": false
+                  },
+                  ".proplist": {
+                    "type": "any",
+                    "required": false
+                  },
+                  ".query": {
+                    "type": "array",
+                    "required": false
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "Success",
+                "body": {
+                  "application/json": {
+                    "type": "any"
+                  }
+                }
+              },
+              "400": {
+                "description": "Bad command or error",
+                "body": {
+                  "application/json": {
+                    "type": "object"
+                  }
+                }
+              },
+              "401": {
+                "description": "Unauthorized",
+                "body": {
+                  "application/json": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/disable": {
+        "post": {
+          "body": {
+            "application/json": {
+              "type": "object",
+              "properties": {
+                "numbers": {
+                  "type": "any",
+                  "required": false
+                },
+                ".proplist": {
+                  "type": "any",
+                  "required": false
+                },
+                ".query": {
+                  "type": "array",
+                  "required": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/edit": {
+        "post": {
+          "body": {
+            "application/json": {
+              "type": "object",
+              "properties": {
+                "number": {
+                  "type": "any",
+                  "required": false
+                },
+                "value-name": {
+                  "type": "any",
+                  "required": false
+                },
+                ".proplist": {
+                  "type": "any",
+                  "required": false
+                },
+                ".query": {
+                  "type": "array",
+                  "required": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/enable": {
+        "post": {
+          "body": {
+            "application/json": {
+              "type": "object",
+              "properties": {
+                "numbers": {
+                  "type": "any",
+                  "required": false
+                },
+                ".proplist": {
+                  "type": "any",
+                  "required": false
+                },
+                ".query": {
+                  "type": "array",
+                  "required": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/export": {
+        "post": {
+          "body": {
+            "application/json": {
+              "type": "object",
+              "properties": {
+                "compact": {
+                  "type": "any",
+                  "required": false
+                },
+                "file": {
+                  "type": "any",
+                  "required": false
+                },
+                "hide-sensitive": {
+                  "type": "any",
+                  "required": false
+                },
+                "show-sensitive": {
+                  "type": "any",
+                  "required": false
+                },
+                "terse": {
+                  "type": "any",
+                  "required": false
+                },
+                "verbose": {
+                  "type": "any",
+                  "required": false
+                },
+                ".proplist": {
+                  "type": "any",
+                  "required": false
+                },
+                ".query": {
+                  "type": "array",
+                  "required": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/find": {
+        "post": {
+          "body": {
+            "application/json": {
+              "type": "object",
+              "properties": {
+                "where": {
+                  "type": "any",
+                  "required": false
+                },
+                ".proplist": {
+                  "type": "any",
+                  "required": false
+                },
+                ".query": {
+                  "type": "array",
+                  "required": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/get": {
+        "post": {
+          "body": {
+            "application/json": {
+              "type": "object",
+              "properties": {
+                "number": {
+                  "type": "any",
+                  "required": false
+                },
+                "value-name": {
+                  "type": "any",
+                  "required": false
+                },
+                ".proplist": {
+                  "type": "any",
+                  "required": false
+                },
+                ".query": {
+                  "type": "array",
+                  "required": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/{id}": {
+        "get": {
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "uriParameters": {
+          "id": {
+            "type": "string"
+          }
+        },
+        "delete": {
+          "body": {
+            "application/json": {
+              "type": "object",
+              "properties": {
+                "numbers": {
+                  "type": "any",
+                  "required": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "patch": {
+          "body": {
+            "application/json": {
+              "type": "object",
+              "properties": {
+                "6to4-interface": {
+                  "type": "any",
+                  "required": false
+                },
+                "autonomous": {
+                  "type": "any",
+                  "required": false
+                },
+                "comment": {
+                  "type": "any",
+                  "required": false
+                },
+                "disabled": {
+                  "type": "any",
+                  "required": false
+                },
+                "interface": {
+                  "type": "any",
+                  "required": false
+                },
+                "numbers": {
+                  "type": "any",
+                  "required": false
+                },
+                "on-link": {
+                  "type": "any",
+                  "required": false
+                },
+                "preferred-lifetime": {
+                  "type": "any",
+                  "required": false
+                },
+                "prefix": {
+                  "type": "any",
+                  "required": false
+                },
+                "valid-lifetime": {
+                  "type": "any",
+                  "required": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/print": {
+        "post": {
+          "body": {
+            "application/json": {
+              "type": "object",
+              "properties": {
+                "append": {
+                  "type": "any",
+                  "required": false
+                },
+                "as-value": {
+                  "type": "any",
+                  "required": false
+                },
+                "count-only": {
+                  "type": "any",
+                  "required": false
+                },
+                "detail": {
+                  "type": "any",
+                  "required": false
+                },
+                "file": {
+                  "type": "any",
+                  "required": false
+                },
+                "follow": {
+                  "type": "any",
+                  "required": false
+                },
+                "follow-only": {
+                  "type": "any",
+                  "required": false
+                },
+                "follow-strict": {
+                  "type": "any",
+                  "required": false
+                },
+                "from": {
+                  "type": "any",
+                  "required": false
+                },
+                "interval": {
+                  "type": "any",
+                  "required": false
+                },
+                "proplist": {
+                  "type": "any",
+                  "required": false
+                },
+                "show-ids": {
+                  "type": "any",
+                  "required": false
+                },
+                "terse": {
+                  "type": "any",
+                  "required": false
+                },
+                "value-list": {
+                  "type": "any",
+                  "required": false
+                },
+                "where": {
+                  "type": "any",
+                  "required": false
+                },
+                "without-paging": {
+                  "type": "any",
+                  "required": false
+                },
+                ".proplist": {
+                  "type": "any",
+                  "required": false
+                },
+                ".query": {
+                  "type": "array",
+                  "required": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/remove": {
+        "post": {
+          "body": {
+            "application/json": {
+              "type": "object",
+              "properties": {
+                "numbers": {
+                  "type": "any",
+                  "required": false
+                },
+                ".proplist": {
+                  "type": "any",
+                  "required": false
+                },
+                ".query": {
+                  "type": "array",
+                  "required": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/reset": {
+        "post": {
+          "body": {
+            "application/json": {
+              "type": "object",
+              "properties": {
+                "6to4-interface": {
+                  "type": "any",
+                  "required": false
+                },
+                "autonomous": {
+                  "type": "any",
+                  "required": false
+                },
+                "comment": {
+                  "type": "any",
+                  "required": false
+                },
+                "disabled": {
+                  "type": "any",
+                  "required": false
+                },
+                "interface": {
+                  "type": "any",
+                  "required": false
+                },
+                "numbers": {
+                  "type": "any",
+                  "required": false
+                },
+                "on-link": {
+                  "type": "any",
+                  "required": false
+                },
+                "preferred-lifetime": {
+                  "type": "any",
+                  "required": false
+                },
+                "prefix": {
+                  "type": "any",
+                  "required": false
+                },
+                "valid-lifetime": {
+                  "type": "any",
+                  "required": false
+                },
+                ".proplist": {
+                  "type": "any",
+                  "required": false
+                },
+                ".query": {
+                  "type": "array",
+                  "required": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/set": {
+        "post": {
+          "body": {
+            "application/json": {
+              "type": "object",
+              "properties": {
+                "6to4-interface": {
+                  "type": "any",
+                  "required": false
+                },
+                "autonomous": {
+                  "type": "any",
+                  "required": false
+                },
+                "comment": {
+                  "type": "any",
+                  "required": false
+                },
+                "disabled": {
+                  "type": "any",
+                  "required": false
+                },
+                "interface": {
+                  "type": "any",
+                  "required": false
+                },
+                "numbers": {
+                  "type": "any",
+                  "required": false
+                },
+                "on-link": {
+                  "type": "any",
+                  "required": false
+                },
+                "preferred-lifetime": {
+                  "type": "any",
+                  "required": false
+                },
+                "prefix": {
+                  "type": "any",
+                  "required": false
+                },
+                "valid-lifetime": {
+                  "type": "any",
+                  "required": false
+                },
+                ".proplist": {
+                  "type": "any",
+                  "required": false
+                },
+                ".query": {
+                  "type": "array",
+                  "required": false
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success",
+              "body": {
+                "application/json": {
+                  "type": "any"
+                }
+              }
+            },
+            "400": {
+              "description": "Bad command or error",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized",
+              "body": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/print": {
+      "post": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "append": {
+                "type": "any",
+                "required": false
+              },
+              "as-value": {
+                "type": "any",
+                "required": false
+              },
+              "count-only": {
+                "type": "any",
+                "required": false
+              },
+              "detail": {
+                "type": "any",
+                "required": false
+              },
+              "file": {
+                "type": "any",
+                "required": false
+              },
+              "follow": {
+                "type": "any",
+                "required": false
+              },
+              "follow-only": {
+                "type": "any",
+                "required": false
+              },
+              "follow-strict": {
+                "type": "any",
+                "required": false
+              },
+              "from": {
+                "type": "any",
+                "required": false
+              },
+              "interval": {
+                "type": "any",
+                "required": false
+              },
+              "proplist": {
+                "type": "any",
+                "required": false
+              },
+              "show-ids": {
+                "type": "any",
+                "required": false
+              },
+              "terse": {
+                "type": "any",
+                "required": false
+              },
+              "value-list": {
+                "type": "any",
+                "required": false
+              },
+              "where": {
+                "type": "any",
+                "required": false
+              },
+              "without-paging": {
+                "type": "any",
+                "required": false
+              },
+              ".proplist": {
+                "type": "any",
+                "required": false
+              },
+              ".query": {
+                "type": "array",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/remove": {
+      "post": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "numbers": {
+                "type": "any",
+                "required": false
+              },
+              ".proplist": {
+                "type": "any",
+                "required": false
+              },
+              ".query": {
+                "type": "array",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/reset": {
+      "post": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "advertise-dns": {
+                "type": "any",
+                "required": false
+              },
+              "advertise-mac-address": {
+                "type": "any",
+                "required": false
+              },
+              "comment": {
+                "type": "any",
+                "required": false
+              },
+              "disabled": {
+                "type": "any",
+                "required": false
+              },
+              "dns": {
+                "type": "any",
+                "required": false
+              },
+              "hop-limit": {
+                "type": "any",
+                "required": false
+              },
+              "interface": {
+                "type": "any",
+                "required": false
+              },
+              "managed-address-configuration": {
+                "type": "any",
+                "required": false
+              },
+              "mtu": {
+                "type": "any",
+                "required": false
+              },
+              "numbers": {
+                "type": "any",
+                "required": false
+              },
+              "other-configuration": {
+                "type": "any",
+                "required": false
+              },
+              "pref64": {
+                "type": "any",
+                "required": false
+              },
+              "ra-delay": {
+                "type": "any",
+                "required": false
+              },
+              "ra-interval": {
+                "type": "any",
+                "required": false
+              },
+              "ra-lifetime": {
+                "type": "any",
+                "required": false
+              },
+              "ra-preference": {
+                "type": "any",
+                "required": false
+              },
+              "reachable-time": {
+                "type": "any",
+                "required": false
+              },
+              "retransmit-interval": {
+                "type": "any",
+                "required": false
+              },
+              ".proplist": {
+                "type": "any",
+                "required": false
+              },
+              ".query": {
+                "type": "array",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/set": {
+      "post": {
+        "body": {
+          "application/json": {
+            "type": "object",
+            "properties": {
+              "advertise-dns": {
+                "type": "any",
+                "required": false
+              },
+              "advertise-mac-address": {
+                "type": "any",
+                "required": false
+              },
+              "comment": {
+                "type": "any",
+                "required": false
+              },
+              "disabled": {
+                "type": "any",
+                "required": false
+              },
+              "dns": {
+                "type": "any",
+                "required": false
+              },
+              "hop-limit": {
+                "type": "any",
+                "required": false
+              },
+              "interface": {
+                "type": "any",
+                "required": false
+              },
+              "managed-address-configuration": {
+                "type": "any",
+                "required": false
+              },
+              "mtu": {
+                "type": "any",
+                "required": false
+              },
+              "numbers": {
+                "type": "any",
+                "required": false
+              },
+              "other-configuration": {
+                "type": "any",
+                "required": false
+              },
+              "pref64": {
+                "type": "any",
+                "required": false
+              },
+              "ra-delay": {
+                "type": "any",
+                "required": false
+              },
+              "ra-interval": {
+                "type": "any",
+                "required": false
+              },
+              "ra-lifetime": {
+                "type": "any",
+                "required": false
+              },
+              "ra-preference": {
+                "type": "any",
+                "required": false
+              },
+              "reachable-time": {
+                "type": "any",
+                "required": false
+              },
+              "retransmit-interval": {
+                "type": "any",
+                "required": false
+              },
+              ".proplist": {
+                "type": "any",
+                "required": false
+              },
+              ".query": {
+                "type": "array",
+                "required": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "body": {
+              "application/json": {
+                "type": "any"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad command or error",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "body": {
+              "application/json": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "/nd",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to /nd"
+  },
+  "validation": {}
+}

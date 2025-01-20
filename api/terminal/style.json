@@ -1,0 +1,69 @@
+{
+  "endpoint": "/style",
+  "data": {
+    "post": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "style": {
+              "type": "any",
+              "required": false
+            },
+            ".proplist": {
+              "type": "any",
+              "required": false
+            },
+            ".query": {
+              "type": "array",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "/style",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to /style"
+  },
+  "validation": {}
+}

@@ -1,0 +1,193 @@
+{
+  "endpoint": "/{id}",
+  "data": {
+    "get": {
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "uriParameters": {
+      "id": {
+        "type": "string"
+      }
+    },
+    "delete": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "numbers": {
+              "type": "any",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "patch": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "accounting-backup": {
+              "type": "any",
+              "required": false
+            },
+            "accounting-port": {
+              "type": "any",
+              "required": false
+            },
+            "address": {
+              "type": "any",
+              "required": false
+            },
+            "authentication-port": {
+              "type": "any",
+              "required": false
+            },
+            "called-id": {
+              "type": "any",
+              "required": false
+            },
+            "certificate": {
+              "type": "any",
+              "required": false
+            },
+            "comment": {
+              "type": "any",
+              "required": false
+            },
+            "disabled": {
+              "type": "any",
+              "required": false
+            },
+            "domain": {
+              "type": "any",
+              "required": false
+            },
+            "numbers": {
+              "type": "any",
+              "required": false
+            },
+            "protocol": {
+              "type": "any",
+              "required": false
+            },
+            "realm": {
+              "type": "any",
+              "required": false
+            },
+            "secret": {
+              "type": "any",
+              "required": false
+            },
+            "service": {
+              "type": "any",
+              "required": false
+            },
+            "src-address": {
+              "type": "any",
+              "required": false
+            },
+            "timeout": {
+              "type": "any",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "/{id}",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to /{id}"
+  },
+  "validation": {}
+}

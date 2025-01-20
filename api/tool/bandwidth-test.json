@@ -1,0 +1,141 @@
+{
+  "endpoint": "/bandwidth-test",
+  "data": {
+    "post": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "address": {
+              "type": "any",
+              "required": false
+            },
+            "append": {
+              "type": "any",
+              "required": false
+            },
+            "as-value": {
+              "type": "any",
+              "required": false
+            },
+            "connection-count": {
+              "type": "any",
+              "required": false
+            },
+            "direction": {
+              "type": "any",
+              "required": false
+            },
+            "do": {
+              "type": "any",
+              "required": false
+            },
+            "duration": {
+              "type": "any",
+              "required": false
+            },
+            "file": {
+              "type": "any",
+              "required": false
+            },
+            "interval": {
+              "type": "any",
+              "required": false
+            },
+            "local-tx-speed": {
+              "type": "any",
+              "required": false
+            },
+            "local-udp-tx-size": {
+              "type": "any",
+              "required": false
+            },
+            "once": {
+              "type": "any",
+              "required": false
+            },
+            "password": {
+              "type": "any",
+              "required": false
+            },
+            "protocol": {
+              "type": "any",
+              "required": false
+            },
+            "random-data": {
+              "type": "any",
+              "required": false
+            },
+            "remote-tx-speed": {
+              "type": "any",
+              "required": false
+            },
+            "remote-udp-tx-size": {
+              "type": "any",
+              "required": false
+            },
+            "user": {
+              "type": "any",
+              "required": false
+            },
+            "without-paging": {
+              "type": "any",
+              "required": false
+            },
+            ".proplist": {
+              "type": "any",
+              "required": false
+            },
+            ".query": {
+              "type": "array",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "/bandwidth-test",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to /bandwidth-test"
+  },
+  "validation": {}
+}

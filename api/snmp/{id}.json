@@ -1,0 +1,134 @@
+{
+  "endpoint": "/{id}",
+  "data": {
+    "get": {
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "uriParameters": {
+      "id": {
+        "type": "string"
+      }
+    },
+    "patch": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "contact": {
+              "type": "any",
+              "required": false
+            },
+            "enabled": {
+              "type": "any",
+              "required": false
+            },
+            "engine-id-suffix": {
+              "type": "any",
+              "required": false
+            },
+            "location": {
+              "type": "any",
+              "required": false
+            },
+            "src-address": {
+              "type": "any",
+              "required": false
+            },
+            "trap-community": {
+              "type": "any",
+              "required": false
+            },
+            "trap-generators": {
+              "type": "any",
+              "required": false
+            },
+            "trap-interfaces": {
+              "type": "any",
+              "required": false
+            },
+            "trap-target": {
+              "type": "any",
+              "required": false
+            },
+            "trap-version": {
+              "type": "any",
+              "required": false
+            },
+            "vrf": {
+              "type": "any",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "/{id}",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to /{id}"
+  },
+  "validation": {}
+}

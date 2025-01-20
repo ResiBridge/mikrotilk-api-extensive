@@ -1,0 +1,93 @@
+{
+  "endpoint": "/reset",
+  "data": {
+    "post": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "baud-rate": {
+              "type": "any",
+              "required": false
+            },
+            "data-bits": {
+              "type": "any",
+              "required": false
+            },
+            "flow-control": {
+              "type": "any",
+              "required": false
+            },
+            "name": {
+              "type": "any",
+              "required": false
+            },
+            "numbers": {
+              "type": "any",
+              "required": false
+            },
+            "parity": {
+              "type": "any",
+              "required": false
+            },
+            "stop-bits": {
+              "type": "any",
+              "required": false
+            },
+            ".proplist": {
+              "type": "any",
+              "required": false
+            },
+            ".query": {
+              "type": "array",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "/reset",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to /reset"
+  },
+  "validation": {}
+}

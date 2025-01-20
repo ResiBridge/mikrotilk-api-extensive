@@ -1,0 +1,157 @@
+{
+  "endpoint": "/fetch",
+  "data": {
+    "post": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "address": {
+              "type": "any",
+              "required": false
+            },
+            "as-value": {
+              "type": "any",
+              "required": false
+            },
+            "ascii": {
+              "type": "any",
+              "required": false
+            },
+            "certificate": {
+              "type": "any",
+              "required": false
+            },
+            "check-certificate": {
+              "type": "any",
+              "required": false
+            },
+            "dst-path": {
+              "type": "any",
+              "required": false
+            },
+            "duration": {
+              "type": "any",
+              "required": false
+            },
+            "host": {
+              "type": "any",
+              "required": false
+            },
+            "http-data": {
+              "type": "any",
+              "required": false
+            },
+            "http-header-field": {
+              "type": "any",
+              "required": false
+            },
+            "http-method": {
+              "type": "any",
+              "required": false
+            },
+            "keep-result": {
+              "type": "any",
+              "required": false
+            },
+            "mode": {
+              "type": "any",
+              "required": false
+            },
+            "once": {
+              "type": "any",
+              "required": false
+            },
+            "output": {
+              "type": "any",
+              "required": false
+            },
+            "password": {
+              "type": "any",
+              "required": false
+            },
+            "port": {
+              "type": "any",
+              "required": false
+            },
+            "src-address": {
+              "type": "any",
+              "required": false
+            },
+            "src-path": {
+              "type": "any",
+              "required": false
+            },
+            "upload": {
+              "type": "any",
+              "required": false
+            },
+            "url": {
+              "type": "any",
+              "required": false
+            },
+            "user": {
+              "type": "any",
+              "required": false
+            },
+            "without-paging": {
+              "type": "any",
+              "required": false
+            },
+            ".proplist": {
+              "type": "any",
+              "required": false
+            },
+            ".query": {
+              "type": "array",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "/fetch",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to /fetch"
+  },
+  "validation": {}
+}

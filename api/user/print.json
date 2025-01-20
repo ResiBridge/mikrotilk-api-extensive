@@ -1,0 +1,133 @@
+{
+  "endpoint": "/print",
+  "data": {
+    "post": {
+      "body": {
+        "application/json": {
+          "type": "object",
+          "properties": {
+            "append": {
+              "type": "any",
+              "required": false
+            },
+            "as-value": {
+              "type": "any",
+              "required": false
+            },
+            "brief": {
+              "type": "any",
+              "required": false
+            },
+            "count-only": {
+              "type": "any",
+              "required": false
+            },
+            "detail": {
+              "type": "any",
+              "required": false
+            },
+            "file": {
+              "type": "any",
+              "required": false
+            },
+            "follow": {
+              "type": "any",
+              "required": false
+            },
+            "follow-only": {
+              "type": "any",
+              "required": false
+            },
+            "follow-strict": {
+              "type": "any",
+              "required": false
+            },
+            "from": {
+              "type": "any",
+              "required": false
+            },
+            "interval": {
+              "type": "any",
+              "required": false
+            },
+            "proplist": {
+              "type": "any",
+              "required": false
+            },
+            "show-ids": {
+              "type": "any",
+              "required": false
+            },
+            "terse": {
+              "type": "any",
+              "required": false
+            },
+            "value-list": {
+              "type": "any",
+              "required": false
+            },
+            "where": {
+              "type": "any",
+              "required": false
+            },
+            "without-paging": {
+              "type": "any",
+              "required": false
+            },
+            ".proplist": {
+              "type": "any",
+              "required": false
+            },
+            ".query": {
+              "type": "array",
+              "required": false
+            }
+          }
+        }
+      },
+      "responses": {
+        "200": {
+          "description": "Success",
+          "body": {
+            "application/json": {
+              "type": "any"
+            }
+          }
+        },
+        "400": {
+          "description": "Bad command or error",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized",
+          "body": {
+            "application/json": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": {
+    "request": {
+      "method": "GET",
+      "path": "/print",
+      "body": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "items": [
+          {}
+        ]
+      }
+    },
+    "description": "Example GET request to /print"
+  },
+  "validation": {}
+}
